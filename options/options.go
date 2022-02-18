@@ -50,6 +50,8 @@ type Options struct {
 	RateLimits RateLimitOptions `yaml:"rate_limits,omitempty" json:"rate_limits,omitempty"`
 
 	Timeouts TimeoutOptions `yaml:"timeouts,omitempty" json:"timeouts,omitempty"`
+
+	Ingress IngressOptions `yaml:"ingress,omitempty" json:"ingress,omitempty"`
 }
 
 func (o *Options) fillDefaults() {
@@ -94,6 +96,7 @@ func (o *Options) FillDefaultsAndValidate() error {
 		&o.NGINXIngress,
 		&o.RateLimits,
 		&o.Timeouts,
+		&o.Ingress,
 	})
 
 }

@@ -13,6 +13,7 @@ import (
 	"github.com/kubeshop/kusk/generators"
 	_ "github.com/kubeshop/kusk/generators/ambassador/v1"
 	_ "github.com/kubeshop/kusk/generators/ambassador/v2"
+	_ "github.com/kubeshop/kusk/generators/ingress"
 	_ "github.com/kubeshop/kusk/generators/linkerd"
 	_ "github.com/kubeshop/kusk/generators/nginx_ingress"
 	_ "github.com/kubeshop/kusk/generators/traefik"
